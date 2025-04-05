@@ -17,9 +17,9 @@ while (jugar) {
     if (usuario === computadora) {
         console.log("¡ESTAMOS EMPATADOS!");
     } else if (
-        (usuario === 'PIEDRA' && computadora === 'TIJERA') ||
-        (usuario === 'PAPEL' && computadora === 'PIEDRA') ||
-        (usuario === 'TIJERA' && computadora === 'PAPEL')) 
+        (usuario === "PIEDRA" && computadora === "TIJERA") ||
+        (usuario === "PAPEL" && computadora === "PIEDRA") ||
+        (usuario === "TIJERA" && computadora === "PAPEL")) 
         {
         console.log("¡FELICIDADES ... GANASTE!");
     } else {
