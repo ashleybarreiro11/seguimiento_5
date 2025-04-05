@@ -6,7 +6,7 @@ console.log ("Frutas en orden alfabético: " + frutas)
 
 function SingularAPlural (palabra) {
     if (palabra.endsWith("s")){
-
+        return palabra
     }
     return palabra + "s"
 }
@@ -25,7 +25,7 @@ console.log("¿Existe mango?: " + existeFruta("mango"));
 console.log("¿Existe uva?: " + existeFruta("uva"));
 
 const frutasCortas = frutas.filter(fruta => fruta.length <= 4);
-console.log("Frutas con menos o igual a 4 letras: " + frutasCortas);
+console.log("Frutas con 4 letras o menos: " + frutasCortas);
 
 function eliminarFruta(fruta) {
     if (existeFruta(fruta)) {
@@ -39,4 +39,4 @@ function eliminarFruta(fruta) {
 
 console.log("Eliminar mango: " + eliminarFruta("mango"));
 console.log("Eliminar uva: " + eliminarFruta("uva"));
-console.log("Arreglo tras eliminar uva: " + frutas)
+console.log("Arreglo después de eliminar uva: " + frutas)
